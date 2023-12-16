@@ -1,4 +1,23 @@
+
+
+
 # CoffeeBrewtimer
+## Access
+https://heya-naohiro.github.io/coffee-brewtimer/
+
+## How to develop
+```
+yarn start
+```
+
+## How to build and deploy
+```
+$ ng build --base-href "https://heya-naohiro.github.io/coffee-brewtimer/"
+$ npx ngh --dir=dist/coffee-brewtimer
+```
+
+
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.4.
 
