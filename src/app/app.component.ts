@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Observable, interval, Subscription } from 'rxjs';
 import { RecipeStorageService, Recipe } from './service/recipestorage.service';
+import { environment } from 'src/environments/environment.prod';
 
 @Component({
   selector: 'app-root',
@@ -17,7 +18,7 @@ export class AppComponent {
   activerecipeindex = 0;
 
   recipes: Recipe[] = [];
-  private soundAudio: HTMLAudioElement = new Audio('/assets/alarm.mp3');
+  private soundAudio: HTMLAudioElement = new Audio(environment.alarmSource);
 
   constructor(private recipe: RecipeStorageService) {}
   public reset() {
