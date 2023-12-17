@@ -30,7 +30,6 @@ export class AppComponent {
   }
 
   public ngOnInit() {
-    this.soundAudio.load();
     this.recipes = this.recipe.fetch()
     // active indexを覚えておく
     for (let i = 0 ; i < this.recipes.length; i++) {
@@ -42,6 +41,7 @@ export class AppComponent {
   }
   public startTimer() {
     if (this.subscription === undefined || this.subscription.closed) {
+      this.soundAudio.load();
       this.subscription = this.millisecondsCounter.subscribe(() => {
         this.nowdsec = this.nowdsec + 1;
         if (this.isAlarmPoint()) {
