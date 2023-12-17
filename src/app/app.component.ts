@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Observable, interval, Subscription } from 'rxjs';
 import { RecipeStorageService, Recipe } from './service/recipestorage.service';
-import { environment } from 'src/environments/environment.prod';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-root',
