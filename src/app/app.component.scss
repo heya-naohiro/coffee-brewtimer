@@ -1,0 +1,22 @@
+.countup {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.centerbuttons {
+    display: flex;
+    align-content: center;
+    column-gap: 2vh;
+    justify-content: center;
+ }
+
+ .credit {
+
+    align-content: center;
+    justify-content: center;
+    font-size: small;
+    position: absolute;/* ←絶対位置 */
+    bottom: 0;
+ }
+ 

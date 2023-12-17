@@ -1,10 +1,15 @@
-
+<div class="countup">
+    <div class="mat-h1">
 {{ nowdsec * 100 | date:'mm:ss' }}
-{{ nowdsec }}
-{{ recipes[activerecipeindex] | json}}
-{{ alarmindex }}
-<button (click)="startTimer()"> Start </button>
-<button (click)="stopTimer()"> Pause </button>
-<button (click)="reset()"> Reset </button>
+    </div>
+</div>
+<div class="centerbuttons">
+<button mat-fab color="primary" (click)="startTimer()" *ngIf="isStopped()"> Start </button>
+<button mat-fab color="warn" (click)="stopTimer()" *ngIf="!isStopped()"> Pause </button>
+<button mat-fab color="accent" (click)="reset()"> Reset </button>
+</div>
 
+<footer class="credit">
 sound by OtoLogic(CC BY 4.0)
+</footer>
+

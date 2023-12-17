@@ -24,6 +24,11 @@ export class AppComponent {
     this.nowdsec = 0;
     this.alarmindex = 0;
   }
+
+  public isStopped(): boolean {
+    return this.subscription === undefined || this.subscription.closed
+  }
+
   public ngOnInit() {
     this.soundAudio.load();
     this.recipes = this.recipe.fetch()
@@ -72,7 +77,7 @@ export class AppComponent {
         this.soundAudio.currentTime = 0;
       }, 500)
       */
-    }, 1000)
+    }, 1500)
    //this.soundAudio.pause();
 
   }
