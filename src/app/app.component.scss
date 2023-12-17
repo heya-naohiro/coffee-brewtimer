@@ -1,18 +1,23 @@
-.countup {
+.contentconteiner {
     display: flex;
-    align-content: center;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh
+}
+
+.countup {
+    font-size: 5em;
 }
 
 .centerbuttons {
     display: flex;
-    align-content: center;
+    margin: 100px;
     column-gap: 2vh;
-    justify-content: center;
+
  }
 
  .credit {
-
     align-content: center;
     justify-content: center;
     font-size: small;
@@ -20,3 +25,9 @@
     bottom: 0;
  }
  
+.mainbutton {
+    width: 120px!important;
+    height: 120px!important;
+    min-width: unset!important;
+    font-size: 2em;
+}
