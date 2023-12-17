@@ -3,12 +3,9 @@ name: auto deploy
 on:
   push:
     branches: main
-
 jobs:
   build:
-    runs-on: ubuntu-18.04
-    
-
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
       - name: Use Setup nodejs
