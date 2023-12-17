@@ -17,6 +17,7 @@ jobs:
           yarn install
           yarn build --base-href "https://heya-naohiro.github.io/coffee-brewtimer/"
           cp -a dist/coffee-brewtimer/index.html dist/coffee-brewtimer/404.html
+          cp -a dist/coffee-brewtimer/assets/alarm.mp3 dist/coffee-brewtimer/alarm.mp3
         env:
           CI: true
       - name: Deploy 🚀
